@@ -22,17 +22,17 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: GitHub Action for SwiftLint
-        uses: proximie/action-swiftlint@3.2.1
+        uses: proximie/action-swiftlint@0.54.0
       - name: GitHub Action for SwiftLint with --strict
-        uses: proximie/action-swiftlint@3.2.1
+        uses: proximie/action-swiftlint@0.54.0
         with:
           args: --strict
       - name: GitHub Action for SwiftLint (Only files changed in the PR)
-        uses: proximie/action-swiftlint@3.2.1
+        uses: proximie/action-swiftlint@0.54.0
         env:
           DIFF_BASE: ${{ github.base_ref }}
       - name: GitHub Action for SwiftLint (Different working directory)
-        uses: proximie/action-swiftlint@3.2.1
+        uses: proximie/action-swiftlint@0.54.0
         env:
           WORKING_DIRECTORY: Source
 ```
