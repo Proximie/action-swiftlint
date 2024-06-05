@@ -3,13 +3,13 @@ name: Docker Build
 on:
   push:
     branches: [master]
-    paths: 
+    paths:
       - '.dockerignore'
       - '.github/workflows/docker-build.yml'
       - 'Dockerfile'
       - 'entrypoint.sh'
   pull_request:
-    paths: 
+    paths:
       - '.dockerignore'
       - '.github/workflows/docker-build.yml'
       - 'Dockerfile'
